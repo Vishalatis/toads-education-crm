@@ -1,0 +1,1614 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Toads Education Admin</title>
+    <!-- plugins:css -->
+    <link
+      rel="stylesheet"
+      href="assets/vendors/mdi/css/materialdesignicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendors/flag-icon-css/css/flag-icon.min.css"
+    />
+    <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css" />
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <link
+      rel="stylesheet"
+      href="assets/vendors/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.css"
+    />
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- End layout styles -->
+    <link rel="shortcut icon" href="assets/images/logo.png" />
+  </head>
+
+  <body>
+    <div class="container-scroller">
+      <nav
+        class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row"
+      >
+        <div
+          class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center"
+        >
+          <a class="navbar-brand brand-logo" href="index.html"
+            ><img src="assets/images/logo.png" alt="logo"
+          /></a>
+          <a class="navbar-brand brand-logo-mini" href="index.html"
+            ><img src="assets/images/logo.png" alt="logo"
+          /></a>
+        </div>
+        <div class="navbar-menu-wrapper d-flex align-items-stretch">
+          <button
+            class="navbar-toggler navbar-toggler align-self-center"
+            type="button"
+            data-toggle="minimize"
+          >
+            <span class="mdi mdi-menu"></span>
+          </button>
+          <div class="search-field d-none d-xl-block">
+            <form class="d-flex align-items-center h-100" action="#">
+              <div class="input-group">
+                <div class="input-group-prepend bg-transparent">
+                  <i class="input-group-text border-0 mdi mdi-magnify"></i>
+                </div>
+                <input
+                  type="text"
+                  class="form-control bg-transparent border-0"
+                  placeholder="Search..."
+                />
+              </div>
+            </form>
+          </div>
+          <ul class="navbar-nav navbar-nav-right">
+            <li class="nav-item nav-profile dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                id="profileDropdown"
+                href="#"
+                data-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <div class="nav-profile-img">
+                  <img src="assets/images/faces/face1.jpg" alt="image" />
+                </div>
+                <div class="nav-profile-text">
+                  <p class="mb-1 text-black">Suraj Jamdade</p>
+                </div>
+              </a>
+              <div
+                class="dropdown-menu navbar-dropdown dropdown-menu-right p-0 border-0 font-size-sm"
+                aria-labelledby="profileDropdown"
+                data-x-placement="bottom-end"
+              >
+                <div class="p-3 text-center" style="background: #030336">
+                  <img
+                    class="img-avatar img-avatar48 img-avatar-thumb"
+                    src="assets/images/faces/face1.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="p-2">
+                  <h5 class="dropdown-header text-uppercase pl-2 text-dark">
+                    Suraj Jamdade
+                  </h5>
+
+                  <a
+                    class="dropdown-item py-1 d-flex align-items-center justify-content-between"
+                    href="profile.html"
+                  >
+                    <span>Profile</span>
+                    <i class="mdi mdi-settings"></i>
+                  </a>
+                  <div role="separator" class="dropdown-divider"></div>
+                  <h5
+                    class="dropdown-header text-uppercase pl-2 text-dark mt-2"
+                  >
+                    Actions
+                  </h5>
+
+                  <a
+                    class="dropdown-item py-1 d-flex align-items-center justify-content-between"
+                    href="login.html"
+                  >
+                    <span>Log Out</span>
+                    <i class="mdi mdi-logout ml-1"></i>
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <button
+            class="navbar-toggler navbar-toggler-right d-lg-none align-self-center"
+            type="button"
+            data-toggle="offcanvas"
+          >
+            <span class="mdi mdi-menu"></span>
+          </button>
+        </div>
+      </nav>
+      <!-- partial -->
+      <div class="container-fluid page-body-wrapper">
+        <!-- partial:partials/_sidebar.html -->
+        <nav class="sidebar sidebar-offcanvas" id="sidebar">
+          <ul class="nav">
+            <li class="nav-item nav-category">Main</li>
+            <li class="nav-item">
+              <a class="nav-link" href="dashboard.html">
+                <span class="icon-bg"
+                  ><i class="mdi mdi-cube menu-icon"></i
+                ></span>
+                <span class="menu-title">Dashboard</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-toggle="collapse"
+                href="#Administration"
+                aria-expanded="false"
+                aria-controls="ui-basic"
+              >
+                <span class="icon-bg"
+                  ><i class="mdi mdi-settings menu-icon"></i
+                ></span>
+                <span class="menu-title">Administration</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="collapse" id="Administration">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="users.html">Users</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="sub-organization-franchise.html"
+                      >Sub-Org / Franchise</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="branches.html">Branches</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="courses.html">Courses</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="subjects.html">Subjects</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="fee-structures.html"
+                      >Fee Structures</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="batches.html">
+                <span class="icon-bg"
+                  ><i class="mdi mdi-book menu-icon"></i
+                ></span>
+                <span class="menu-title">Batches</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-toggle="collapse"
+                href="#CRM"
+                aria-expanded="false"
+                aria-controls="ui-basic"
+              >
+                <span class="icon-bg"
+                  ><i class="mdi mdi-phone menu-icon"></i
+                ></span>
+                <span class="menu-title">CRM</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="collapse" id="CRM">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="lead.html">Leads</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="enquires.html">Enquires</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-toggle="collapse"
+                href="#Admission"
+                aria-expanded="false"
+                aria-controls="ui-basic"
+              >
+                <span class="icon-bg"
+                  ><i class="mdi mdi-book-lock menu-icon"></i
+                ></span>
+                <span class="menu-title">Admission</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="collapse" id="Admission">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="unallocated-admissions-list.html"
+                      >Unallocated Admissions</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="partially-allocated-admissions-list.html"
+                      >Partially Alloc Admissions</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="active-admissions-list.html">
+                      Active Admissions</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="blocked-admissions-list.html">
+                      Blocked Admissions</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="cancelled-admissions-list.html">
+                      Cancelled Admissions</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="completed-admissions-list.html">
+                      Completed Admissions</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-toggle="collapse"
+                href="#Examination"
+                aria-expanded="false"
+                aria-controls="ui-basic"
+              >
+                <span class="icon-bg"
+                  ><i class="mdi mdi-chart-arc menu-icon"></i
+                ></span>
+                <span class="menu-title">Examination</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="collapse" id="Examination">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="exam-group.html">Exam Group</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="upcoming-examination.html"
+                      >Upcoming Examination</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-toggle="collapse"
+                href="#Reconciliation"
+                aria-expanded="false"
+                aria-controls="ui-basic"
+              >
+                <span class="icon-bg"
+                  ><i class="mdi mdi-check menu-icon"></i
+                ></span>
+                <span class="menu-title">Account Reconciliation</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="collapse" id="Reconciliation">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="account-reconciliation-list.html"
+                      >Account List</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-toggle="collapse"
+                href="#Cash"
+                aria-expanded="false"
+                aria-controls="ui-basic"
+              >
+                <span class="icon-bg"
+                  ><i class="mdi mdi-account menu-icon"></i
+                ></span>
+                <span class="menu-title">Cash Reconciliation</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="collapse" id="Cash">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="cash-reconciliation-list.html"
+                      >Cash List</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-toggle="collapse"
+                href="#Notification"
+                aria-expanded="false"
+                aria-controls="ui-basic"
+              >
+                <span class="icon-bg"
+                  ><i class="mdi mdi-bell menu-icon"></i
+                ></span>
+                <span class="menu-title">Send Notification</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="collapse" id="Notification">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="notification-list.html"
+                      >Notification List</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="reports.html">
+                <span class="icon-bg"
+                  ><i class="mdi mdi-bullseye menu-icon"></i
+                ></span>
+                <span class="menu-title">Reports</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-toggle="collapse"
+                href="#Team"
+                aria-expanded="false"
+                aria-controls="ui-basic"
+              >
+                <span class="icon-bg"
+                  ><i class="mdi mdi-human-male-female menu-icon"></i
+                ></span>
+                <span class="menu-title">Team</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="collapse" id="Team">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="team-list.html">Team List</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="time-sheet.html">Time Sheet</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-toggle="collapse"
+                href="#auth"
+                aria-expanded="false"
+                aria-controls="auth"
+              >
+                <span class="icon-bg"
+                  ><i class="mdi mdi-lock menu-icon"></i
+                ></span>
+                <span class="menu-title">User Pages</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="collapse" id="auth">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="profile.html"> Profile </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="login.html"> Login </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="register.html"> Register </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="nav-item sidebar-user-actions mt-5">
+              <div class="user-details">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <div class="d-flex align-items-center">
+                      <div class="sidebar-profile-img">
+                        <img
+                          src="assets/images/faces/face1.jpg"
+                          alt="image"
+                          style="width: 30px"
+                        />
+                      </div>
+                      <div class="sidebar-profile-text">
+                        <p class="mb-1">Suraj Jamdade</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="badge badge-danger">Admin</div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item sidebar-user-actions">
+              <div class="sidebar-user-menu">
+                <a href="profile.html" class="nav-link"
+                  ><i class="mdi mdi-settings menu-icon"></i>
+                  <span class="menu-title">Settings</span>
+                </a>
+              </div>
+            </li>
+
+            <li class="nav-item sidebar-user-actions">
+              <div class="sidebar-user-menu">
+                <a href="login.html" class="nav-link"
+                  ><i class="mdi mdi-logout menu-icon"></i>
+                  <span class="menu-title">Log Out</span></a
+                >
+              </div>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- partial -->
+        <div class="main-panel">
+          <div class="content-wrapper">
+            <div class="page-header">
+              <h3 class="page-title">Batch:- Digital Marketing</h3>
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item">
+                    <a href="dashboard.html">Home</a>
+                  </li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    Batch Detail
+                  </li>
+                </ol>
+              </nav>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-12">
+                <blockquote class="blockquote">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div
+                        class="d-flex"
+                        style="gap: 80px; background: #e1ecec; padding: 12px"
+                      >
+                        <div>
+                          <h6
+                            style="
+                              color: #000;
+                              font-size: 14px;
+                              font-weight: 400;
+                            "
+                          >
+                            Branch Name:
+                            <span class="font-weight-bold">JM Pune</span>
+                          </h6>
+                          <h6
+                            style="
+                              color: #000;
+                              font-size: 14px;
+                              font-weight: 400;
+                            "
+                          >
+                            Start Date:
+                            <span class="font-weight-bold">10/07/2024</span>
+                          </h6>
+                          <h6
+                            style="
+                              color: #000;
+                              font-size: 14px;
+                              font-weight: 400;
+                            "
+                          >
+                            End Date :
+                            <span class="font-weight-bold">10/04/2025</span>
+                          </h6>
+                        </div>
+                        <div>
+                          <h6
+                            style="
+                              color: #000;
+                              font-size: 14px;
+                              font-weight: 400;
+                            "
+                          >
+                            Created By:
+                            <span class="font-weight-bold">--</span>
+                          </h6>
+                          <h6
+                            style="
+                              color: #000;
+                              font-size: 14px;
+                              font-weight: 400;
+                            "
+                          >
+                            Created On:
+                            <span class="font-weight-bold">10 July 2024</span>
+                          </h6>
+                        </div>
+                        <div>
+                          <h6
+                            style="
+                              color: #000;
+                              font-size: 14px;
+                              font-weight: 400;
+                            "
+                          >
+                            Updated By:
+                            <span class="font-weight-bold">--</span>
+                          </h6>
+                          <h6
+                            style="
+                              color: #000;
+                              font-size: 14px;
+                              font-weight: 400;
+                            "
+                          >
+                            Timings:
+                            <span class="font-weight-bold"
+                              >10:00 AM - 11:00 AM</span
+                            >
+                          </h6>
+                        </div>
+
+                        <div>
+                          <h6
+                            style="
+                              color: #000;
+                              font-size: 14px;
+                              font-weight: 400;
+                            "
+                          >
+                            Capacity:
+                            <span class="font-weight-bold">20</span>
+                          </h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6"></div>
+                  </div>
+                </blockquote>
+              </div>
+              <div class="col-lg-12 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link active"
+                          id="home-tab"
+                          data-toggle="tab"
+                          data-target="#home"
+                          type="button"
+                          role="tab"
+                          aria-controls="home"
+                          aria-selected="true"
+                        >
+                          Subjects
+                        </button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link"
+                          id="profile-tab"
+                          data-toggle="tab"
+                          data-target="#profile"
+                          type="button"
+                          role="tab"
+                          aria-controls="profile"
+                          aria-selected="false"
+                        >
+                          Schedule Batch
+                        </button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link"
+                          id="batches-tab"
+                          data-toggle="tab"
+                          data-target="#batches"
+                          type="button"
+                          role="tab"
+                          aria-controls="batches"
+                          aria-selected="false"
+                        >
+                          Batch Student
+                        </button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link"
+                          id="attendance-tab"
+                          data-toggle="tab"
+                          data-target="#attendance"
+                          type="button"
+                          role="tab"
+                          aria-controls="attendance"
+                          aria-selected="false"
+                        >
+                          Exams
+                        </button>
+                      </li>
+                    </ul>
+
+                    <div class="tab-content" id="myTabContent">
+                      <div
+                        class="tab-pane fade show active"
+                        id="home"
+                        role="tabpanel"
+                        aria-labelledby="home-tab"
+                      >
+                        <div class="mb-4 text-right">
+                          <button
+                            type="button"
+                            class="btn btn-outline-primary"
+                            data-toggle="modal"
+                            data-target="#subjectModal"
+                          >
+                            <i class="mdi mdi-plus"></i> Add Subjects
+                          </button>
+                        </div>
+                        <table class="table table-bordered">
+                          <thead>
+                            <tr>
+                              <th>Code</th>
+                              <th>Subject Name</th>
+                              <th>Description</th>
+                              <th>Faculty</th>
+                              <th>Update Faculty</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>123232</td>
+                              <td>UI/UX</td>
+                              <td>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Aut, voluptatem!
+                              </td>
+                              <td>Suraj jamdade</td>
+                              <td>
+                                <button
+                                  class="btn btn-success btn-xs"
+                                  data-target="#facultyModal"
+                                  data-toggle="modal"
+                                >
+                                  Update Faculty
+                                </button>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="profile"
+                        role="tabpanel"
+                        aria-labelledby="profile-tab"
+                      >
+                        <div>
+                          <button
+                            type="button"
+                            class="btn btn-outline-primary btn-icon-text mb-4"
+                            data-toggle="modal"
+                            data-target="#singleScheduleModal"
+                          >
+                            Add Single Schedule
+                            <i class="mdi mdi-plus btn-icon-append"></i>
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-outline-primary btn-icon-text mb-4"
+                            data-toggle="modal"
+                            data-target="#multipleScheduleModal"
+                          >
+                            Add Multiple Schedule
+                            <i class="mdi mdi-plus btn-icon-append"></i>
+                          </button>
+                        </div>
+                        <div class="card">
+                          <div class="card-body">
+                            <div class="row">
+                              <div class="col-lg-3 mb-2">
+                                <div
+                                  class="bg-success text-white p-3 text-center"
+                                >
+                                  <label for="">Scheduled </label>
+                                  <h4>1</h4>
+                                </div>
+                              </div>
+                              <div class="col-lg-3 mb-2">
+                                <div
+                                  class="bg-warning text-white p-3 text-center"
+                                >
+                                  <label for="">Conducted </label>
+                                  <h4>0</h4>
+                                </div>
+                              </div>
+                              <div class="col-lg-3 mb-2">
+                                <div
+                                  class="bg-danger text-white p-3 text-center"
+                                >
+                                  <label for="">Cancelled </label>
+                                  <h4>0</h4>
+                                </div>
+                              </div>
+                              <div class="col-lg-3 mb-2">
+                                <div class="bg-info text-white p-3 text-center">
+                                  <label for="">Remaining </label>
+                                  <h4>1</h4>
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <table class="table table-bordered">
+                                <thead>
+                                  <tr>
+                                    <th>Date</th>
+                                    <th>Tue 10 Feb 2024</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>Time</td>
+                                    <td>10:00 AM - 12:00 PM</td>
+                                    <td>Faculty</td>
+                                    <td>Manish Shah</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Subject</td>
+                                    <td>UI/UX</td>
+                                    <td>
+                                      <button
+                                        class="btn btn-outline-dark btn-xs"
+                                      >
+                                        <i class="mdi mdi-pencil"></i> make
+                                        attendance
+                                      </button>
+                                    </td>
+                                    <td>
+                                      <button
+                                        class="btn btn-outline-dark btn-xs"
+                                      >
+                                        <i class="mdi mdi-refresh"></i>
+                                        Reschedule
+                                      </button>
+                                    </td>
+                                    <td>
+                                      <button
+                                        class="btn btn-outline-danger btn-xs"
+                                      >
+                                        <i class="mdi mdi-refresh"></i>
+                                        Cancel Schedule
+                                      </button>
+                                    </td>
+                                    <td>
+                                      <button
+                                        class="btn btn-outline-dark btn-xs"
+                                      >
+                                        <i class="mdi mdi-file-pdf"></i> Print
+                                        Attendance Sheet
+                                      </button>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="batches"
+                        role="tabpanel"
+                        aria-labelledby="batches-tab"
+                      >
+                        <div class="mb-4 text-right">
+                          <button
+                            class="btn btn-outline-primary"
+                            data-target="#batchModal"
+                            data-toggle="modal"
+                          >
+                            <i class="mdi mdi-plus"></i> Actions
+                          </button>
+                          <button
+                            class="btn btn-outline-primary"
+                            data-target="#emilModal"
+                            data-toggle="modal"
+                          >
+                            <i class="mdi mdi-email"></i>
+                          </button>
+                          <button class="btn btn-outline-primary">
+                            <i class="mdi mdi-download"></i>
+                          </button>
+                        </div>
+                        <table class="table table-bordered">
+                          <thead>
+                            <tr>
+                              <th>Sr.No</th>
+                              <th>Student Name</th>
+                              <th>Attendance ID</th>
+                              <th>Subject's</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>Suraj Jamdade</td>
+                              <td>10</td>
+                              <td>UI</td>
+
+                              <td>
+                                <button
+                                  type="button"
+                                  class="btn btn-outline-danger btn-xs"
+                                >
+                                  Delete
+                                  <i
+                                    class="mdi mdi-trash-can btn-icon-append"
+                                  ></i>
+                                </button>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="attendance"
+                        role="tabpanel"
+                        aria-labelledby="attendance-tab"
+                      >
+                        ...
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="exam"
+                        role="tabpanel"
+                        aria-labelledby="exam-tab"
+                      >
+                        ...
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="documents"
+                        role="tabpanel"
+                        aria-labelledby="documents-tab"
+                      >
+                        ...
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- content-wrapper ends -->
+
+          <!-- partial:../../partials/_footer.html -->
+          <footer class="footer">
+            <div class="footer-inner-wraper">
+              <div
+                class="d-sm-flex justify-content-center justify-content-sm-between"
+              >
+                <span
+                  class="text-muted d-block text-center text-sm-left d-sm-inline-block"
+                  >Copyright © Toads Education Admin 2024</span
+                >
+              </div>
+            </div>
+          </footer>
+          <!-- partial -->
+        </div>
+        <!-- main-panel ends -->
+      </div>
+      <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+
+    <!--subjectModal Modal -->
+    <div
+      class="modal fade"
+      id="subjectModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" style="max-width: 800px">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-dark" id="exampleModalLabel">
+              Add Subjects to the batch
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <div class="form-check form-check-flat form-check-primary">
+                <label class="form-check-label text-dark">
+                  <input type="checkbox" class="form-check-input" /> UI/UX
+                  <i class="input-helper"></i
+                ></label>
+              </div>
+              <div class="form-check form-check-flat form-check-primary">
+                <label class="form-check-label text-dark">
+                  <input type="checkbox" class="form-check-input" /> UI/UX
+                  <i class="input-helper"></i
+                ></label>
+              </div>
+              <div class="form-check form-check-flat form-check-primary">
+                <label class="form-check-label text-dark">
+                  <input type="checkbox" class="form-check-input" /> UI/UX
+                  <i class="input-helper"></i
+                ></label>
+              </div>
+              <div class="form-check form-check-flat form-check-primary">
+                <label class="form-check-label text-dark">
+                  <input type="checkbox" class="form-check-input" /> UI/UX
+                  <i class="input-helper"></i
+                ></label>
+              </div>
+              <div class="form-check form-check-flat form-check-primary">
+                <label class="form-check-label text-dark">
+                  <input type="checkbox" class="form-check-input" /> UI/UX
+                  <i class="input-helper"></i
+                ></label>
+              </div>
+              <div class="form-check form-check-flat form-check-primary">
+                <label class="form-check-label text-dark">
+                  <input type="checkbox" class="form-check-input" /> UI/UX
+                  <i class="input-helper"></i
+                ></label>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">
+              <i class="mdi mdi-close-octagon menu-icon"></i> Close
+            </button>
+
+            <button type="button" class="btn btn-primary">
+              <i class="mdi mdi-content-save menu-icon"></i> Add
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--faculty Modal -->
+    <div
+      class="modal fade"
+      id="facultyModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" style="max-width: 800px">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-dark" id="exampleModalLabel">
+              Update Faculties
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div>
+              <input
+                type="search"
+                class="form-control"
+                placeholder="Search..."
+              />
+            </div>
+            <form action="">
+              <div class="form-check form-check-flat form-check-primary">
+                <label class="form-check-label text-dark">
+                  <input type="checkbox" class="form-check-input" /> Suraj
+                  Jamdade <i class="input-helper"></i
+                ></label>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">
+              <i class="mdi mdi-close-octagon menu-icon"></i> Close
+            </button>
+
+            <button type="button" class="btn btn-primary">
+              <i class="mdi mdi-content-save menu-icon"></i> Update
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- singleScheduleModal modal -->
+
+    <div
+      class="modal fade"
+      id="singleScheduleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" style="max-width: 800px">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-dark" id="exampleModalLabel">
+              Add Single Schedule
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <div class="row">
+                <div class="col-lg-6 mb-2">
+                  <label for="" class="text-dark">Subject</label>
+                  <select name="" id="" class="form-control">
+                    <option value="">Select</option>
+                    <option value="">UI/UX</option>
+                    <option value="">AI</option>
+                    <option value="">Graphics</option>
+                  </select>
+                </div>
+                <div class="col-lg-6 mb-2">
+                  <label for="" class="text-dark">Faculty</label>
+                  <select name="" id="" class="form-control">
+                    <option value="">Select</option>
+                    <option value="">Suraj Jamdade</option>
+                    <option value="">Rahul Agarwal</option>
+                    <option value="">Manish Shah</option>
+                  </select>
+                </div>
+                <div class="col-lg-6 mb-2">
+                  <label for="" class="text-dark">Date</label>
+                  <input type="date" class="form-control" />
+                </div>
+                <div class="col-lg-6 mb-2">
+                  <label for="" class="text-dark">From Time</label>
+                  <input type="time" class="form-control" />
+                </div>
+                <div class="col-lg-6 mb-2">
+                  <label for="" class="text-dark">To Time</label>
+                  <input type="time" class="form-control" />
+                </div>
+                <div class="col-lg-6 mb-2">
+                  <label for="" class="text-dark">Class Room</label>
+                  <select name="" id="" class="form-control">
+                    <option value="">Select</option>
+                    <option value="">Class 1</option>
+                    <option value="">Class 2</option>
+                    <option value="">class 3</option>
+                    <option value="">class 4</option>
+                    <option value="">class 5</option>
+                    <option value="">class 6</option>
+                    <option value="">class 7</option>
+                    <option value="">class 8</option>
+                    <option value="">class 9</option>
+                    <option value="">class 10</option>
+                  </select>
+                </div>
+                <div class="col-lg-6 mb-2">
+                  <label for="" class="text-dark">Topic</label>
+                  <select name="" id="" class="form-control">
+                    <option value="">Select</option>
+                    <option value="">--</option>
+                  </select>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">
+              <i class="mdi mdi-close-octagon menu-icon"></i> Close
+            </button>
+
+            <button type="button" class="btn btn-primary">
+              <i class="mdi mdi-content-save menu-icon"></i> Save
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- multipleScheduleModal modal -->
+
+    <div
+      class="modal fade"
+      id="multipleScheduleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" style="max-width: 800px">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-dark" id="exampleModalLabel">
+              Add Multiple Schedule
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <div class="row">
+                <div class="col-lg-6 mb-2">
+                  <label for="" class="text-dark">Subject</label>
+                  <select name="" id="" class="form-control">
+                    <option value="">Select</option>
+                    <option value="">UI/UX</option>
+                    <option value="">AI</option>
+                    <option value="">Graphics</option>
+                  </select>
+                </div>
+                <div class="col-lg-6 mb-2">
+                  <label for="" class="text-dark">Faculty</label>
+                  <select name="" id="" class="form-control">
+                    <option value="">Select</option>
+                    <option value="">Suraj Jamdade</option>
+                    <option value="">Rahul Agarwal</option>
+                    <option value="">Manish Shah</option>
+                  </select>
+                </div>
+                <div class="col-lg-6 mb-2">
+                  <label for="" class="text-dark">Date</label>
+                  <input type="date" class="form-control" />
+                </div>
+                <div class="col-lg-6 mb-2">
+                  <label for="" class="text-dark">From Time</label>
+                  <input type="time" class="form-control" />
+                </div>
+                <div class="col-lg-6 mb-2">
+                  <label for="" class="text-dark">To Time</label>
+                  <input type="time" class="form-control" />
+                </div>
+                <div class="col-lg-6 mb-2">
+                  <label for="" class="text-dark">Class Room</label>
+                  <select name="" id="" class="form-control">
+                    <option value="">Select</option>
+                    <option value="">Class 1</option>
+                    <option value="">Class 2</option>
+                    <option value="">class 3</option>
+                    <option value="">class 4</option>
+                    <option value="">class 5</option>
+                    <option value="">class 6</option>
+                    <option value="">class 7</option>
+                    <option value="">class 8</option>
+                    <option value="">class 9</option>
+                    <option value="">class 10</option>
+                  </select>
+                </div>
+                <div class="col-lg-6 mb-5">
+                  <label for="" class="text-dark">Topic</label>
+                  <select name="" id="" class="form-control">
+                    <option value="">Select</option>
+                    <option value="">--</option>
+                  </select>
+                </div>
+                <hr />
+                <div class="col-lg-12">
+                  <div class="row">
+                    <div class="col-lg-3 mb-2">
+                      <label for="" class="text-dark" class="text-dark"
+                        >schedule</label
+                      >
+                    </div>
+                    <div class="col-lg-3 mb-2">
+                      <label for="" class="text-dark" class="text-dark"
+                        >From Time</label
+                      >
+                    </div>
+                    <div class="col-lg-3 mb-2">
+                      <label for="" class="text-dark" class="text-dark"
+                        >To Time</label
+                      >
+                    </div>
+                    <div class="col-lg-3 mb-2">
+                      <label for="" class="text-dark" class="text-dark"
+                        >Class Room</label
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 mb-2">
+                  <div class="form-check form-check-flat form-check-primary">
+                    <label class="form-check-label" class="text-dark">
+                      <input type="checkbox" class="form-check-input" />
+                      Sunday <i class="input-helper"></i
+                    ></label>
+                  </div>
+                </div>
+                <div class="col-lg-3 mb-2">
+                  <input type="time" class="form-control" />
+                </div>
+                <div class="col-lg-3 mb-2">
+                  <input type="time" class="form-control" />
+                </div>
+                <div class="col-lg-3 mb-2">
+                  <select name="" id="" class="form-control">
+                    <option value="">Select</option>
+                    <option value="">Class 1</option>
+                    <option value="">Class 2</option>
+                    <option value="">class 3</option>
+                    <option value="">class 4</option>
+                    <option value="">class 5</option>
+                    <option value="">class 6</option>
+                    <option value="">class 7</option>
+                    <option value="">class 8</option>
+                    <option value="">class 9</option>
+                    <option value="">class 10</option>
+                  </select>
+                </div>
+                <div class="col-lg-3 mb-2">
+                  <div class="form-check form-check-flat form-check-primary">
+                    <label class="form-check-label" class="text-dark">
+                      <input
+                        type="checkbox"
+                        class="form-check-input text-dark" />
+                      Monday <i class="input-helper"></i
+                    ></label>
+                  </div>
+                </div>
+                <div class="col-lg-3 mb-2">
+                  <input type="time" class="form-control" />
+                </div>
+                <div class="col-lg-3 mb-2">
+                  <input type="time" class="form-control" />
+                </div>
+                <div class="col-lg-3 mb-2">
+                  <select name="" id="" class="form-control">
+                    <option value="">Select</option>
+                    <option value="">Class 1</option>
+                    <option value="">Class 2</option>
+                    <option value="">class 3</option>
+                    <option value="">class 4</option>
+                    <option value="">class 5</option>
+                    <option value="">class 6</option>
+                    <option value="">class 7</option>
+                    <option value="">class 8</option>
+                    <option value="">class 9</option>
+                    <option value="">class 10</option>
+                  </select>
+                </div>
+                <div class="col-lg-3 mb-2">
+                  <div class="form-check form-check-flat form-check-primary">
+                    <label class="form-check-label" class="text-dark">
+                      <input type="checkbox" class="form-check-input" />
+                      Tuesday <i class="input-helper"></i
+                    ></label>
+                  </div>
+                </div>
+                <div class="col-lg-3 mb-2">
+                  <input type="time" class="form-control" />
+                </div>
+                <div class="col-lg-3 mb-2">
+                  <input type="time" class="form-control" />
+                </div>
+                <div class="col-lg-3 mb-2">
+                  <select name="" id="" class="form-control">
+                    <option value="">Select</option>
+                    <option value="">Class 1</option>
+                    <option value="">Class 2</option>
+                    <option value="">class 3</option>
+                    <option value="">class 4</option>
+                    <option value="">class 5</option>
+                    <option value="">class 6</option>
+                    <option value="">class 7</option>
+                    <option value="">class 8</option>
+                    <option value="">class 9</option>
+                    <option value="">class 10</option>
+                  </select>
+                </div>
+                <div class="col-lg-3 mb-2">
+                  <div class="form-check form-check-flat form-check-primary">
+                    <label class="form-check-label" class="text-dark">
+                      <input type="checkbox" class="form-check-input" />
+                      Wednesday <i class="input-helper"></i
+                    ></label>
+                  </div>
+                </div>
+                <div class="col-lg-3 mb-2">
+                  <input type="time" class="form-control" />
+                </div>
+                <div class="col-lg-3 mb-2">
+                  <input type="time" class="form-control" />
+                </div>
+                <div class="col-lg-3 mb-2">
+                  <select name="" id="" class="form-control">
+                    <option value="">Select</option>
+                    <option value="">Class 1</option>
+                    <option value="">Class 2</option>
+                    <option value="">class 3</option>
+                    <option value="">class 4</option>
+                    <option value="">class 5</option>
+                    <option value="">class 6</option>
+                    <option value="">class 7</option>
+                    <option value="">class 8</option>
+                    <option value="">class 9</option>
+                    <option value="">class 10</option>
+                  </select>
+                </div>
+                <div class="col-lg-3 mb-2">
+                  <div class="form-check form-check-flat form-check-primary">
+                    <label class="form-check-label" class="text-dark">
+                      <input type="checkbox" class="form-check-input" />
+                      Thursday <i class="input-helper"></i
+                    ></label>
+                  </div>
+                </div>
+                <div class="col-lg-3 mb-2">
+                  <input type="time" class="form-control" />
+                </div>
+                <div class="col-lg-3 mb-2">
+                  <input type="time" class="form-control" />
+                </div>
+                <div class="col-lg-3 mb-2">
+                  <select name="" id="" class="form-control">
+                    <option value="">Select</option>
+                    <option value="">Class 1</option>
+                    <option value="">Class 2</option>
+                    <option value="">class 3</option>
+                    <option value="">class 4</option>
+                    <option value="">class 5</option>
+                    <option value="">class 6</option>
+                    <option value="">class 7</option>
+                    <option value="">class 8</option>
+                    <option value="">class 9</option>
+                    <option value="">class 10</option>
+                  </select>
+                </div>
+                <div class="col-lg-3 mb-2">
+                  <div class="form-check form-check-flat form-check-primary">
+                    <label class="form-check-label" class="text-dark">
+                      <input type="checkbox" class="form-check-input" />
+                      Friday <i class="input-helper"></i
+                    ></label>
+                  </div>
+                </div>
+                <div class="col-lg-3 mb-2">
+                  <input type="time" class="form-control" />
+                </div>
+                <div class="col-lg-3 mb-2">
+                  <input type="time" class="form-control" />
+                </div>
+                <div class="col-lg-3 mb-2">
+                  <select name="" id="" class="form-control">
+                    <option value="">Select</option>
+                    <option value="">Class 1</option>
+                    <option value="">Class 2</option>
+                    <option value="">class 3</option>
+                    <option value="">class 4</option>
+                    <option value="">class 5</option>
+                    <option value="">class 6</option>
+                    <option value="">class 7</option>
+                    <option value="">class 8</option>
+                    <option value="">class 9</option>
+                    <option value="">class 10</option>
+                  </select>
+                </div>
+                <div class="col-lg-3 mb-2">
+                  <div class="form-check form-check-flat form-check-primary">
+                    <label class="form-check-label" class="text-dark">
+                      <input type="checkbox" class="form-check-input" />
+                      Saturday <i class="input-helper"></i
+                    ></label>
+                  </div>
+                </div>
+                <div class="col-lg-3 mb-2">
+                  <input type="time" class="form-control" />
+                </div>
+                <div class="col-lg-3 mb-2">
+                  <input type="time" class="form-control" />
+                </div>
+                <div class="col-lg-3 mb-2">
+                  <select name="" id="" class="form-control">
+                    <option value="">Select</option>
+                    <option value="">Class 1</option>
+                    <option value="">Class 2</option>
+                    <option value="">class 3</option>
+                    <option value="">class 4</option>
+                    <option value="">class 5</option>
+                    <option value="">class 6</option>
+                    <option value="">class 7</option>
+                    <option value="">class 8</option>
+                    <option value="">class 9</option>
+                    <option value="">class 10</option>
+                  </select>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">
+              <i class="mdi mdi-close-octagon menu-icon"></i> Close
+            </button>
+
+            <button type="button" class="btn btn-primary">
+              <i class="mdi mdi-content-save menu-icon"></i> Save
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- batchModal modal -->
+
+    <div
+      class="modal fade"
+      id="batchModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" style="max-width: 800px">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-dark" id="exampleModalLabel">
+              Add Batch
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <div class="row">
+                <div class="col-lg-6 mb-2">
+                  <label for="" class="text-dark">Student Name</label>
+                  <input type="text" class="form-control" />
+                </div>
+                <div class="col-lg-6 mb-2">
+                  <label for="" class="text-dark">Gender</label>
+                  <select name="" id="" class="form-control">
+                    <option value="">Select</option>
+                    <option value="">Male</option>
+                    <option value="">FeMale</option>
+                    <option value="">Other</option>
+                  </select>
+                </div>
+                <div class="col-lg-6 mb-2">
+                  <label for="" class="text-dark">Attendance ID</label>
+                  <input type="text" class="form-control" />
+                </div>
+
+                <div class="col-lg-6 mb-2">
+                  <label for="" class="text-dark">Branch</label>
+                  <select name="" id="" class="form-control">
+                    <option value="">Select</option>
+                    <option value="">JM Road Pune</option>
+                  </select>
+                </div>
+                <div class="col-lg-12 mb-5">
+                  <label for="" class="text-dark">Subjects</label>
+                  <select name="" id="" class="form-control">
+                    <option value="">Select</option>
+                    <option value="">UI/UX</option>
+                    <option value="">AI</option>
+                    <option value="">Graphics</option>
+                  </select>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">
+              <i class="mdi mdi-close-octagon menu-icon"></i> Close
+            </button>
+
+            <button type="button" class="btn btn-primary">
+              <i class="mdi mdi-content-save menu-icon"></i> Save
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- plugins:js -->
+    <script src="assets/vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <script src="assets/vendors/chart.js/Chart.min.js"></script>
+    <script src="assets/vendors/jquery-circle-progress/js/circle-progress.min.js"></script>
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="assets/js/off-canvas.js"></script>
+    <script src="assets/js/hoverable-collapse.js"></script>
+    <script src="assets/js/misc.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page -->
+    <script src="assets/js/dashboard.js"></script>
+    <!-- End custom js for this page -->
+
+    <script>
+      function formatDate(date) {
+        const options = { year: "numeric", month: "short", day: "numeric" };
+        return new Intl.DateTimeFormat("en-US", options).format(date);
+      }
+
+      const today = new Date();
+      const startDate = formatDate(today);
+      const endDate = formatDate(today);
+
+      document.getElementById(
+        "date-range"
+      ).textContent = `${startDate} - ${endDate}`;
+    </script>
+  </body>
+</html>

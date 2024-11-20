@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Toads Education Admin</title>
+    <!-- plugins:css -->
+    <link
+      rel="stylesheet"
+      href="assets/vendors/mdi/css/materialdesignicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendors/flag-icon-css/css/flag-icon.min.css"
+    />
+    <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css" />
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <link
+      rel="stylesheet"
+      href="assets/vendors/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.css"
+    />
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- End layout styles -->
+    <link rel="shortcut icon" href="assets/images/logo.png" />
+  </head>
+
+  <body>
+    <div class="container-scroller">
+      <!-- partial:partials/_navbar.html -->
+      <nav
+        class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row"
+      >
+        <div
+          class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center"
+        >
+          <a class="navbar-brand brand-logo" href="index.html"
+            ><img src="assets/images/logo.png" alt="logo"
+          /></a>
+          <a class="navbar-brand brand-logo-mini" href="index.html"
+            ><img src="assets/images/logo.png" alt="logo"
+          /></a>
+        </div>
+        <div class="navbar-menu-wrapper d-flex align-items-stretch">
+          <button
+            class="navbar-toggler navbar-toggler align-self-center"
+            type="button"
+            data-toggle="minimize"
+          >
+            <span class="mdi mdi-menu"></span>
+          </button>
+          <div class="search-field d-none d-xl-block">
+            <form class="d-flex align-items-center h-100" action="#">
+              <div class="input-group">
+                <div class="input-group-prepend bg-transparent">
+                  <i class="input-group-text border-0 mdi mdi-magnify"></i>
+                </div>
+                <input
+                  type="text"
+                  class="form-control bg-transparent border-0"
+                  placeholder="Search..."
+                />
+              </div>
+            </form>
+          </div>
+          <ul class="navbar-nav navbar-nav-right">
+            <li class="nav-item nav-profile dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                id="profileDropdown"
+                href="#"
+                data-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <div class="nav-profile-img">
+                  <img src="assets/images/faces/face1.jpg" alt="image" />
+                </div>
+                <div class="nav-profile-text">
+                  <p class="mb-1 text-black">Suraj Jamdade</p>
+                </div>
+              </a>
+              <div
+                class="dropdown-menu navbar-dropdown dropdown-menu-right p-0 border-0 font-size-sm"
+                aria-labelledby="profileDropdown"
+                data-x-placement="bottom-end"
+              >
+                <div class="p-3 text-center" style="background: #030336">
+                  <img
+                    class="img-avatar img-avatar48 img-avatar-thumb"
+                    src="assets/images/faces/face1.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="p-2">
+                  <h5 class="dropdown-header text-uppercase pl-2 text-dark">
+                    Suraj Jamdade
+                  </h5>
+
+                  <a
+                    class="dropdown-item py-1 d-flex align-items-center justify-content-between"
+                    href="profile.html"
+                  >
+                    <span>Profile</span>
+                    <i class="mdi mdi-settings"></i>
+                  </a>
+                  <div role="separator" class="dropdown-divider"></div>
+                  <h5
+                    class="dropdown-header text-uppercase pl-2 text-dark mt-2"
+                  >
+                    Actions
+                  </h5>
+
+                  <a
+                    class="dropdown-item py-1 d-flex align-items-center justify-content-between"
+                    href="login.html"
+                  >
+                    <span>Log Out</span>
+                    <i class="mdi mdi-logout ml-1"></i>
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <button
+            class="navbar-toggler navbar-toggler-right d-lg-none align-self-center"
+            type="button"
+            data-toggle="offcanvas"
+          >
+            <span class="mdi mdi-menu"></span>
+          </button>
+        </div>
+      </nav>
+      <!-- partial -->
+      <div class="container-fluid page-body-wrapper">
+        <!-- partial:partials/_sidebar.html -->
+        <nav class="sidebar sidebar-offcanvas" id="sidebar">
+          <ul class="nav">
+            <li class="nav-item nav-category">Main</li>
+            <li class="nav-item">
+              <a class="nav-link" href="dashboard.html">
+                <span class="icon-bg"
+                  ><i class="mdi mdi-cube menu-icon"></i
+                ></span>
+                <span class="menu-title">Dashboard</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-toggle="collapse"
+                href="#Administration"
+                aria-expanded="false"
+                aria-controls="ui-basic"
+              >
+                <span class="icon-bg"
+                  ><i class="mdi mdi-settings menu-icon"></i
+                ></span>
+                <span class="menu-title">Administration</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="collapse" id="Administration">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="users.html">Users</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="sub-organization-franchise.html"
+                      >Sub-Org / Franchise</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="branches.html">Branches</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="courses.html">Courses</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="subjects.html">Subjects</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="fee-structures.html"
+                      >Fee Structures</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="batches.html">
+                <span class="icon-bg"
+                  ><i class="mdi mdi-book menu-icon"></i
+                ></span>
+                <span class="menu-title">Batches</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-toggle="collapse"
+                href="#CRM"
+                aria-expanded="false"
+                aria-controls="ui-basic"
+              >
+                <span class="icon-bg"
+                  ><i class="mdi mdi-phone menu-icon"></i
+                ></span>
+                <span class="menu-title">CRM</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="collapse" id="CRM">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="lead.html">Leads</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="enquires.html">Enquires</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-toggle="collapse"
+                href="#Admission"
+                aria-expanded="false"
+                aria-controls="ui-basic"
+              >
+                <span class="icon-bg"
+                  ><i class="mdi mdi-book-lock menu-icon"></i
+                ></span>
+                <span class="menu-title">Admission</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="collapse" id="Admission">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="unallocated-admissions-list.html"
+                      >Unallocated Admissions</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="partially-allocated-admissions-list.html"
+                      >Partially Alloc Admissions</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="active-admissions-list.html">
+                      Active Admissions</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="blocked-admissions-list.html">
+                      Blocked Admissions</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="cancelled-admissions-list.html">
+                      Cancelled Admissions</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="completed-admissions-list.html">
+                      Completed Admissions</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-toggle="collapse"
+                href="#Examination"
+                aria-expanded="false"
+                aria-controls="ui-basic"
+              >
+                <span class="icon-bg"
+                  ><i class="mdi mdi-chart-arc menu-icon"></i
+                ></span>
+                <span class="menu-title">Examination</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="collapse" id="Examination">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="exam-group.html">Exam Group</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="upcoming-examination.html"
+                      >Upcoming Examination</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-toggle="collapse"
+                href="#Reconciliation"
+                aria-expanded="false"
+                aria-controls="ui-basic"
+              >
+                <span class="icon-bg"
+                  ><i class="mdi mdi-check menu-icon"></i
+                ></span>
+                <span class="menu-title">Account Reconciliation</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="collapse" id="Reconciliation">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="account-reconciliation-list.html"
+                      >Account List</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-toggle="collapse"
+                href="#Cash"
+                aria-expanded="false"
+                aria-controls="ui-basic"
+              >
+                <span class="icon-bg"
+                  ><i class="mdi mdi-account menu-icon"></i
+                ></span>
+                <span class="menu-title">Cash Reconciliation</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="collapse" id="Cash">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="cash-reconciliation-list.html"
+                      >Cash List</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-toggle="collapse"
+                href="#Notification"
+                aria-expanded="false"
+                aria-controls="ui-basic"
+              >
+                <span class="icon-bg"
+                  ><i class="mdi mdi-bell menu-icon"></i
+                ></span>
+                <span class="menu-title">Send Notification</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="collapse" id="Notification">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="notification-list.html"
+                      >Notification List</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="reports.html">
+                <span class="icon-bg"
+                  ><i class="mdi mdi-bullseye menu-icon"></i
+                ></span>
+                <span class="menu-title">Reports</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-toggle="collapse"
+                href="#Team"
+                aria-expanded="false"
+                aria-controls="ui-basic"
+              >
+                <span class="icon-bg"
+                  ><i class="mdi mdi-human-male-female menu-icon"></i
+                ></span>
+                <span class="menu-title">Team</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="collapse" id="Team">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="team-list.html">Team List</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="time-sheet.html">Time Sheet</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-toggle="collapse"
+                href="#auth"
+                aria-expanded="false"
+                aria-controls="auth"
+              >
+                <span class="icon-bg"
+                  ><i class="mdi mdi-lock menu-icon"></i
+                ></span>
+                <span class="menu-title">User Pages</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="collapse" id="auth">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="profile.html"> Profile </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="login.html"> Login </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="register.html"> Register </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="nav-item sidebar-user-actions mt-5">
+              <div class="user-details">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <div class="d-flex align-items-center">
+                      <div class="sidebar-profile-img">
+                        <img
+                          src="assets/images/faces/face1.jpg"
+                          alt="image"
+                          style="width: 30px"
+                        />
+                      </div>
+                      <div class="sidebar-profile-text">
+                        <p class="mb-1">Suraj Jamdade</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="badge badge-danger">Admin</div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item sidebar-user-actions">
+              <div class="sidebar-user-menu">
+                <a href="profile.html" class="nav-link"
+                  ><i class="mdi mdi-settings menu-icon"></i>
+                  <span class="menu-title">Settings</span>
+                </a>
+              </div>
+            </li>
+
+            <li class="nav-item sidebar-user-actions">
+              <div class="sidebar-user-menu">
+                <a href="login.html" class="nav-link"
+                  ><i class="mdi mdi-logout menu-icon"></i>
+                  <span class="menu-title">Log Out</span></a
+                >
+              </div>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- partial -->
+        <div class="main-panel">
+          <div class="content-wrapper">
+            <div class="page-header">
+              <h3 class="page-title">Active Admissions</h3>
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item">
+                    <a href="dashboard.html">Home</a>
+                  </li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    Active Admissions
+                  </li>
+                </ol>
+              </nav>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-12 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between mb-3">
+                      <div class="search-field" style="border: 1px solid #000">
+                        <form
+                          class="d-flex align-items-center h-100"
+                          action="#"
+                        >
+                          <div class="input-group">
+                            <div class="input-group-prepend bg-transparent">
+                              <i
+                                class="input-group-text border-0 mdi mdi-magnify"
+                              ></i>
+                            </div>
+                            <input
+                              type="text"
+                              class="form-control bg-transparent border-0"
+                              placeholder="Search..."
+                            />
+                          </div>
+                        </form>
+                      </div>
+                      <div>
+                        <input
+                          type="date"
+                          class="form-control"
+                          placeholder="Search..."
+                        />
+                      </div>
+                      <div>
+                        <select name="" id="" class="form-control">
+                          <option value="">Select Course</option>
+                          <option value="">Graphics</option>
+                          <option value="">AI</option>
+                          <option value="">UI/UX</option>
+                        </select>
+                      </div>
+                      <a href="add-new-admission.html">
+                        <button
+                          type="button"
+                          class="btn btn-outline-danger btn-icon-text"
+                        >
+                          <i class="mdi mdi-plus btn-icon-prepend"></i> Add New
+                          Admission
+                        </button>
+                      </a>
+                    </div>
+
+                    <table class="table table-bordered table-responsive">
+                      <thead>
+                        <tr>
+                          <th>Sr.No</th>
+                          <th>Admission No</th>
+                          <th>Student Name</th>
+                          <th>Mobile No</th>
+                          <th>Branch Name</th>
+                          <th>Course Name</th>
+                          <th>Admission Date</th>
+                          <th>Taken By</th>
+                          <th>Status</th>
+                          <th>Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>2024/100</td>
+                          <td>Aditya rane</td>
+                          <td>+91 9090909090</td>
+                          <td>2024 Branch</td>
+                          <td>UI/UX</td>
+                          <td>10/07/2024</td>
+                          <td>Ashiwarya Rane</td>
+                          <td>
+                            <div class="badge badge-success">
+                              Full Allocation
+                            </div>
+                          </td>
+
+                          <td>
+                            <div
+                              class="btn-group"
+                              role="group"
+                              aria-label="Basic example"
+                            >
+                              <a href="view-unallocated-admission.html">
+                                <button
+                                  type="button"
+                                  class="btn btn-inverse-primary btn-icon mx-2"
+                                  title="View"
+                                  data-toggle="modal"
+                                  data-target="#viewModal"
+                                >
+                                  <i class="mdi mdi-eye"></i>
+                                </button>
+                              </a>
+                              <a href="edit-unallocated-admission.html">
+                                <button
+                                  type="button"
+                                  class="btn btn-inverse-dark btn-icon mx-2"
+                                  title="Edit"
+                                >
+                                  <i class="mdi mdi-table-edit"></i>
+                                </button>
+                              </a>
+                              <a href="#">
+                                <button
+                                  type="button"
+                                  class="btn btn-inverse-danger btn-icon mx-2"
+                                  title="Delete"
+                                  data-toggle="modal"
+                                  data-target="#exampleModal"
+                                >
+                                  <i class="mdi mdi-trash-can"></i>
+                                </button>
+                              </a>
+                              <a href="#">
+                                <button
+                                  type="button"
+                                  class="btn btn-inverse-success btn-icon mx-2"
+                                  title="Email"
+                                  data-toggle="modal"
+                                  data-target="#emailModal"
+                                >
+                                  <i class="mdi mdi-email"></i>
+                                </button>
+                              </a>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <div class="row mt-5 text-center">
+                      <div class="col-lg-12">
+                        <div
+                          class="btn-group"
+                          role="group"
+                          aria-label="Basic example"
+                        >
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary"
+                          >
+                            1
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary"
+                          >
+                            2
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary"
+                          >
+                            3
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- content-wrapper ends -->
+
+          <!-- partial:../../partials/_footer.html -->
+          <footer class="footer">
+            <div class="footer-inner-wraper">
+              <div
+                class="d-sm-flex justify-content-center justify-content-sm-between"
+              >
+                <span
+                  class="text-muted d-block text-center text-sm-left d-sm-inline-block"
+                  >Copyright © Toads Education Admin 2024</span
+                >
+              </div>
+            </div>
+          </footer>
+          <!-- partial -->
+        </div>
+        <!-- main-panel ends -->
+      </div>
+      <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="assets/vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <script src="assets/vendors/chart.js/Chart.min.js"></script>
+    <script src="assets/vendors/jquery-circle-progress/js/circle-progress.min.js"></script>
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="assets/js/off-canvas.js"></script>
+    <script src="assets/js/hoverable-collapse.js"></script>
+    <script src="assets/js/misc.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page -->
+    <script src="assets/js/dashboard.js"></script>
+    <!-- End custom js for this page -->
+
+    <script>
+      function formatDate(date) {
+        const options = { year: "numeric", month: "short", day: "numeric" };
+        return new Intl.DateTimeFormat("en-US", options).format(date);
+      }
+
+      const today = new Date();
+      const startDate = formatDate(today);
+      const endDate = formatDate(today);
+
+      document.getElementById(
+        "date-range"
+      ).textContent = `${startDate} - ${endDate}`;
+    </script>
+  </body>
+</html>
